@@ -1,0 +1,17 @@
+<mvc:View
+	displayBlock="true"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+    controllerName="onTheRun.myApp.controller.App">
+	<Carousel>
+		<pages>
+			<Image 		src="https://cdn.pixabay.com/photo/2022/01/07/07/08/seal-6921267_960_720.jpg"
+				height="600px"/>
+			<Image		src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Wikipedia_Hello_World_Graphic.svg/2000px-Wikipedia_Hello_World_Graphic.svg.png"
+				height="600px"/>
+		</pages>
+	</Carousel>
+                <Button 
+                text ="Hello Ui5"
+                press="onButtonPress"/>
+</mvc:View>
