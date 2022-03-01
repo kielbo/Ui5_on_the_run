@@ -6,7 +6,14 @@ sap.ui.define([
 
     return Controller.extend("onTheRun.myApp.controller.App", {
         onButtonPress: function () {
-            MessageToast.show("Always on the run");
+            // read msg from i18n model
+            var oBundle = this.getView().getModel("i18n").getResourceBundle();
+            var sRecipient = this.getView().getModel("helloPanel").getProperty("/recipient/name");
+            var sMsg = oBundle.getText("helloMsg", [sRecipient]);
+
+            // show message
+            MessageToast.show(sMsg);
+
         }
     });
 
